@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS CUSTOMER;  
+CREATE TABLE CUSTOMER (  
+cust_id INT AUTO_INCREMENT  PRIMARY KEY,  
+cust_name VARCHAR(50) NOT NULL,  
+cust_email VARCHAR(50) NOT NULL,
+cust_phone VARCHAR(20)
+cust_mktng_preference VARCHAR(50) NOT NULL
+);  

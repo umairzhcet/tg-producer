@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tg-producer-deployment
+  labels:
+    app: tgproducer
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: tgproducer
+  template:
+    metadata:
+      labels:
+        app: tgproducer
+    spec:
+      containers:
+      - name: tgproducer
+        image: 
+        ports:
+        - containerPort: 80
